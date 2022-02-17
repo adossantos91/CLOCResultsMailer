@@ -16,6 +16,8 @@ A simple Python script that downloads a user-provided GitHub repo link, runs it 
 
 This script assumes that you are currently working/executing out of the folder where the script is located and CLOC is accessible.
 
+** This script also utilizes Gmail specifically for the SMTP implementation ***
+
 # Installing CLOC
 
 
@@ -82,8 +84,24 @@ For a quick and temporary solution to this issue, you can set the path directly 
 
 ```set GIT_PYTHON_GIT_EXECUTABLE=C:\Program Files\Git\cmd\git.exe```
 
+# Minor configuration changes for the script
+
+The script will require a Gmail account to send the email on behalf of. The lines of code to edit will be the following:
+
+```
+sender = 
+password =
+```
+Please keep in mind that you will need to modify your account security settings to allow 3rd party applications access the account:
+
+https://support.google.com/accounts/answer/6010255
+
 # Executing the script
 
 At this point, you should have all the necessary dependencies to run the script. From here, you will just need to move into the directory where CLOC and the script are located (Linux users should be able to execute the ```cloc``` command from anywhere) and run the python script using the following:
 
  **```python3 CLOCResultsMailer.py```**
+ 
+ # Final notes
+ 
+ I am well aware that this is a far cry from a properly secured implementation of this script, this is just for demonstration .
