@@ -92,9 +92,12 @@ The script will require a Gmail account to send the email on behalf of. The line
 sender = 
 password =
 ```
-Please keep in mind that you will need to modify your account security settings to allow 3rd party applications access the account:
+
+Please keep in mind that you will need to modify your account security settings to provide 3rd party applications access to the account:
 
 https://support.google.com/accounts/answer/6010255
+
+I would highly suggest using a test account in this situation.
 
 # Executing the script
 
