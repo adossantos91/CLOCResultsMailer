@@ -104,4 +104,4 @@ At this point, you should have all the necessary dependencies to run the script.
  
  # Final notes
  
- I am well aware that this is a far cry from a properly secured implementation of this script, this is just for demonstration .
+ I am well aware that this is a far cry from a properly secured implementation of this script, this is just for demonstration.
